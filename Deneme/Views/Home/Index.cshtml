@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<div class="hero-section">
+    <div class="hero-overlay">
+        <h1 class="right-align">Merhaba</h1>
+        <br />
+        <br />
+        <p class="italic-text left-align">
+            "Hoş geldiniz! Sitemiz, kaliteli ürünler ve en son trendlerle dolu bir alışveriş deneyimi sunuyor.
+            Kendinize özel bir şeyler bulabileceğiniz geniş koleksiyonumuzu keşfedin."
+        </p>
+    </div>
+</div>
+
+<style>
+    /* Hero Section: Fotoğraf ve metin overlay */
+    .hero-section {
+        background: url('/Img/arkaplans.jpg') no-repeat center center;
+        background-size: cover; /* Fotoğrafın, alanı tamamen dolduracak şekilde büyütülmesi */
+        position: fixed;
+        top: 100; 
+        left:100;
+        right:100;
+        width: 80%; /* Fotoğrafın genişliği tüm ekranı kapsar */
+        height: 80vh; /* Fotoğrafın yüksekliği tüm ekranı kapsar */
+        filter: brightness(50%); /* Fotoğrafın saydamlaşması için parlaklık düşürüldü */
+        z-index: -1; /* Fotoğrafın diğer öğelerin arkasında olması için */
+    }
+
+    /* Hero Overlay: Fotoğrafın üzerindeki metin kutusu */
+    .hero-overlay {
+        background: rgba(0, 0, 0, 0.7); /* Saydam siyah arka plan */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        width: 80%;
+        max-width: 600px;
+        position:absolute;
+        z-index: 10;
+        top: 50%; /* Dikeyde ortalama */
+        right: 0; /* Sağ tarafa yaslama */
+        transform: translateY(-50%);
+        margin: 0 auto; /* Metin kutusunu yatayda ortalar */
+    }
+
+    .italic-text {
+        font-style: italic; /* Yazıyı italik yapar */
+    }
+
+    .right-align {
+        text-align: right; /* Sağ hizalama */
+    }
+
+    .left-align {
+        text-align: left; /* Sol hizalama */
+    }
+</style>
+

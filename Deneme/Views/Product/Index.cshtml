@@ -1,0 +1,69 @@
+﻿@using EntityLayer.Concrete
+@model List<Product>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<table class="table table">
+    <tr>
+        <th>#</th>
+        <th>Ürün Adı</th>
+        <th>Fiyat</th>
+        <th>Stok</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@item.ProductName</td>
+            <td>@item.Price</td>
+            <td>@item.Stock</td>
+            <td><a href="/Product/DeleteProduct/@item.ProductId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Product/UpdateProduct/@item.ProductId" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+
+<div class="scrollable-container">
+    <img src="/Foto/aa.jpg" alt="aa">
+    <img src="/Foto/cc.jpg" alt="cc">
+    <img src="/Foto/mm.jpg" alt="mm">
+    <img src="/Foto/nn.jpg" alt="nn">
+    <img src="/Foto/pp.jpg" alt="pp">
+    <img src="/Foto/vv (1).jpg" alt="vv1">
+    <img src="/Foto/vv (2).jpg" alt="vv2">
+    <img src="/Foto/yy (1).jpg" alt="yy1">
+    <img src="/Foto/yy (2).jpg" alt="yy2">
+
+    <img src="/Foto/aaaaaa.jpg" alt="aa">
+    <img src="/Foto/xxxxx.jpg" alt="cc">
+    <img src="/Foto/tt.jpg" alt="mm">
+    <img src="/Foto/rr.jpg" alt="nn">
+    <img src="/Foto/ee.jpg" alt="pp">
+
+    <img src="/Foto/zz (1).jpg" alt="aa">
+    <img src="/Foto/zz (2).jpg" alt="cc">
+    <img src="/Foto/uu.jpg" alt="mm">
+    <img src="/Foto/ss.jpg" alt="nn">
+    <img src="/Foto/pp.jpg" alt="pp">
+</div>
+
+<style>
+.scrollable-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px; /* Tablo ile fotoğraf arasına mesafe */
+    display: flex; /* Resimleri yatayda sıralamak için */
+}
+
+.scrollable-container img {
+    width: 120px; /* Fotoğrafların boyutunu küçültüyoruz */
+    height: auto;
+    margin-right: 10px; /* Resimler arasına mesafe ekliyoruz */
+}
+
+</style>

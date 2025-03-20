@@ -1,0 +1,112 @@
+﻿
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family:  Verdana, sans-serif;
+        
+    }
+
+    /* Header/logo Title */
+    .header {
+        padding: 10px 20px;
+        text-align: center;
+        color: palevioletred;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-top: 3px solid palevioletred; /* Üst kenarda ince çizgi */
+        border-bottom: 3px solid palevioletred; /* Alt kenarda ince çizgi */
+        height: 35px; /* Kutunun yüksekliği */
+        margin: 20px;
+        display: flex;
+        justify-content: center; /* Yatayda ortalar */
+        align-items: center;
+      
+    }
+
+
+
+        .header h1 {
+            
+        }
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(245, 245, 220, 1); /* Soft bej tonu */
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(255, 182, 193, 0.4); /* Daha hafif bir gölge */
+
+        font-size: 14px; /* Daha okunabilir ve modern bir boyut */
+        font-family: "Dancing Script", cursive; /* Şık ve süslü font */
+        font-weight: 500; /* Orta kalınlık */
+        font-style: inherit; /* Italic efekti */
+        letter-spacing: 1px; /* Harf arası boşluk */
+        color: #b03a5b; /* Palevioletred yerine biraz daha derin bir pembe tonu */
+        text-shadow: 1px 1px 3px rgba(255, 182, 193, 0.5); /* Hafif gölge efekti */
+        
+    }
+
+
+        /* Navigation links */
+        .navbar a {
+            color: navy;
+            text-decoration: none;
+            padding: 12px 16px;
+            transition: 0.3s ease;
+            border-radius: 5px;
+        }
+
+        /* Align left links */
+        .navbar .nav-left {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Right-aligned link */
+        .navbar .right {
+            margin-left: auto;
+        }
+
+        /* Hover effect */
+        .navbar a:hover {
+            background-color: indianred;
+            color: black;
+        }
+
+        /* Active/current link */
+        .navbar a.active {
+            background-color:indianred;
+            color: white;
+        }
+</style>
+
+<div class="header">
+    <h1></h1>
+</div>
+
+<div class="navbar">
+    <div class="nav-left">
+        <a href="/Home/Index/" class="active">Ana Sayfa</a>
+        <a href="/Product/Index/" >Ürünler</a>
+        <a href="/Product/AddProduct/"> Yeni Ürün Girişi</a>
+        <a href="/Customer/Index" >Müşteriler</a>
+        <a href="/Category/Index">Kategoriler</a>
+        <a href="/Home/About/">Hakkında</a>
+       @*  <a href="/Setting/Index">Şifre İşlemleri</a> *@
+        <a href="/Home/Contact/">İletişim</a>
+    </div>
+    <a href="/Login/Index/" class="right">Giriş</a>
+</div>
+
+
+ 

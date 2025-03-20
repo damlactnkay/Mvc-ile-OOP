@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+<h1>@ViewBag.Message</h1>
+<p>
+    Mükemmel Renkler, Kusursuz Görünüm!
+
+    Tırnaklarınıza şıklık ve zarafet katacak, uzun ömürlü ve yoğun pigmentli ojelerimizle tanışın! Geniş renk yelpazesiyle 
+    her tarza ve her ana uyum sağlayan özel formüllü ojelerimiz, kolay sürülür ve hızlı kurur. Parlak ve kalıcı yapısıyla 
+    gün boyu mükemmel görünen tırnaklara sahip olun.
+    <br />
+    Siz de en sevdiğiniz tonu seçin ve tarzınızı ellerinizle yansıtın!
+</p>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+    <h5> Kullanıcılarımızdan gelen geri dönüşler</h5>
+<div class="photo-gallery">
+    <div class="photo-box">
+        <img src="/Img/deneme.jpg" alt="">
+        <p>💅✨</p>
+    </div>
+    <div class="photo-box">
+        <img src="/Img/fotos.jpg" alt="">
+        <p>💅✨</p>
+    </div>
+    <div class="photo-box">
+        <img src="/Img/aax.jpg" alt="">
+        <p>💅✨</p>
+        </div>
+        <div class="photo-box">
+            <img src="/Img/wp.jpg" alt="">
+            <p>💅✨</p>
+            </div>
+            <div class="photo-box">
+                <img src="/Img/qqw.jpg" alt="">
+                <p>💅✨</p>
+    </div>
+      <div class="photo-box">
+                <img src="/Img/ggh.jpg" alt="">
+                <p>💅✨</p>
+    </div>
+</div>
+
+   
+
+    <style>
+    p {
+        font-style: italic; 
+        text-align: justify-all;
+        
+    }
+
+    .photo-gallery {
+        display: flex;
+        gap: 20px; /* Kutucuklar arasındaki boşluk */
+        flex-wrap: wrap; /* Ekran boyutuna göre satıra sığmayan fotoğrafların alt satıra geçmesi */
+    }
+
+    .photo-box {
+        width: 150px; /* Kutucuk genişliği */
+        height: 150px; /* Kutucuk yüksekliği */
+        overflow: hidden; /* Fotoğrafın kutucuk dışına taşmasını engeller */
+        border-radius: 10px; /* Yuvarlak köşeler */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    }
+
+        .photo-box img {
+            width: 100%; /* Fotoğrafın kutucuğa sığmasını sağlar */
+            height: 100%; /* Fotoğrafın kutucuğa sığmasını sağlar */
+            object-fit: cover; /* Fotoğrafın kutucuk boyutlarına göre kesilmesini sağlar */
+        }
+
+   
+    </style>
