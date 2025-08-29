@@ -15,7 +15,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DAMLACETINKAYA;Database=DbNewDeneme;Integrated Security=True;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("");
 
         }
       
